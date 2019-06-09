@@ -43,9 +43,10 @@ function WeatherBoxItem({ weatherListItem: weatherDayItem, maxMinTemp, city, max
                 </Typography>
 
                 <Typography variant="body2" component="h6" className={classes.tempMinMax}>
-                  <span className={classes.bullet}> Sea Level: </span>
-                  <span className={classes.bullet}>{convertPipeMKm( weatherDayItem[selectedIndex].main.sea_level)}</span>
+                  <span className={classes.bullet}> Wind speed: </span>
+                  <span className={classes.bullet}>{ weatherDayItem[selectedIndex].wind.speed}</span>
                 </Typography>
+                                                    
                 <Typography variant="body2" component="p" className={classes.tempMinMax}>
                   <span className={classes.bullet}>Cloud:</span>
                   <span className={classes.bullet}> {weatherDayItem[selectedIndex].clouds.all}%</span>
