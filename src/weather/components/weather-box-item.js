@@ -95,6 +95,7 @@ const useStyles = makeStyles({
   bullet: {
     display: 'contents',
     transform: 'scale(0.8)',
+    transform: 'scale(0.8)',
     fontSize: '120%'
   }, 
   title: {
