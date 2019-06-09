@@ -14,6 +14,12 @@
 .MuiCardContent-root {
   padding: 6px !important
 } 
+.MuiCardContent-root:hover {
+  background: whitesmoke
+}
+.MuiPaper-root:hover {
+  margin: 57px 9px 16px;
+}
 
 .App-header {
   min-height: 100vh;
