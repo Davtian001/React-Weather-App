@@ -20,7 +20,7 @@ function WeatherBoxItem({ weatherListItem: weatherDayItem, maxMinTemp, city, max
 
       {({ mainStateWeatherData, selectedIndex }) => (
         <Fragment> 
-
+{console.log(mainStateWeatherData)}
           <Card className={classes.card}>
             <CardContent>
 
@@ -35,20 +35,21 @@ function WeatherBoxItem({ weatherListItem: weatherDayItem, maxMinTemp, city, max
                   title="pagoda"
                   />
 
+                <Link to={`/${posInd}`} className={classes.routeLink}>
               <CardActionArea>
-                <Typography variant="body2" component="p" className={classes.tempMinMax}>
+                <Typography variant="body2" component="p">
                   <span className={classes.bullet}> Temp: </span>
                   <span className={classes.bullet}>{convertScale('celcius', maxMinTemp.dayMax)} -</span>
                   <span className={classes.bullet}>{convertScale('celcius', maxMinTemp.dayMin)}</span>
                 </Typography>
 
-                <Typography variant="body2" component="h6" className={classes.tempMinMax}>
+                <Typography variant="body2" component="h6">
                   <span className={classes.bullet}> Wind speed: </span>
                   <span className={classes.bullet}>{ weatherDayItem[selectedIndex].wind.speed}</span>
                 </Typography>
-                                                    
-                <Typography variant="body2" component="p" className={classes.tempMinMax}>
-                  <span className={classes.bullet}>Cloud:</span>
+                
+                <Typography variant="body2" component="p">
+                  <span className={classes.bullet}>Clouds:</span>
                   <span className={classes.bullet}> {weatherDayItem[selectedIndex].clouds.all}%</span>
                 </Typography>
 
@@ -57,14 +58,14 @@ function WeatherBoxItem({ weatherListItem: weatherDayItem, maxMinTemp, city, max
                 </Typography>
 
               </CardActionArea>
+              </Link>
+
             </CardContent>
             <CardActions>
               <Link to={`/${posInd}`}>
                 <Button size="small">Learn More</Button>
               </Link>
-              <Link to="/">
-                <Button size="small">Close</Button>
-              </Link>
+
 
             </CardActions>
           </Card>
@@ -114,7 +115,8 @@ const useStyles = makeStyles({
     position: 'absolute',
     margin: '-170px 121px'
   },
-  tempMinMax: {
-
-  }
+  routeLink: {
+    color: 'black',
+    textDecoration: 'none'
+  },
 });
