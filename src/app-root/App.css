@@ -20,7 +20,9 @@
 .makeStyles-card-168:hover {
   margin: 57px 9px 16px;
 }
-
+.makeStyles-paper-105:hover {
+  background: aliceblue;
+}
 .App-header {
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
