@@ -39,8 +39,8 @@ function WeatherBoxItem({ weatherListItem: weatherDayItem, maxMinTemp, city, max
               <CardActionArea>
                 <Typography variant="body2" component="p">
                   <span className={classes.bullet}> Temp: </span>
-                  <span className={classes.bullet}>{convertScale('celcius', maxMinTemp.dayMax)} -</span>
-                  <span className={classes.bullet}>{convertScale('celcius', maxMinTemp.dayMin)}</span>
+                  <span className={classes.bullet}>{convertScale('celcius', maxMinTemp.dayMax)} - </span>
+                  <span className={classes.bullet}>{ convertScale('celcius', maxMinTemp.dayMin)}</span>
                 </Typography>
 
                 <Typography variant="body2" component="h6">
