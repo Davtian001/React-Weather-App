@@ -90,6 +90,7 @@ const useStyles = makeStyles({
     minWidth: 225,
     margin: '57px 4px 16px',
     display: 'inline-block',
+    transition: '0.3s',
     // boxShadow: '-9px -2px 46px 3px grey'
   },
   bullet: {
