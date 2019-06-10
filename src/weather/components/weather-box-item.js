@@ -20,7 +20,7 @@ function WeatherBoxItem({ weatherListItem: weatherDayItem, maxMinTemp, city, max
 
       {({ mainStateWeatherData, selectedIndex }) => (
         <Fragment> 
-{console.log(mainStateWeatherData)}
+
           <Card className={classes.card}>
             <CardContent>
 
